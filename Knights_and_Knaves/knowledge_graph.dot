@@ -1,0 +1,31 @@
+digraph { 
+ node [ fontname="DejaVu Sans" ] ; 
+	node0 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node2 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node4 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node5 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node6 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node8 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node7 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+	node9 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>rdf:type</font> > ] ;
+# http://example.org/Xan node0
+node0 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Xan</B></td></tr><tr><td href='http://example.org/Xan' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Xan</font></td></tr><tr><td align='left'>ns1:says</td><td align='left'>&quot;Quentin lies&quot;</td></tr></table> > ] 
+# http://www.w3.org/2002/07/owl#NamedIndividual node1
+node1 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>NamedIndividual</B></td></tr><tr><td href='http://www.w3.org/2002/07/owl#NamedIndividual' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2002/07/owl#NamedIndividual</font></td></tr></table> > ] 
+# http://example.org/Knave node2
+node2 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Knave</B></td></tr><tr><td href='http://example.org/Knave' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Knave</font></td></tr></table> > ] 
+# http://www.w3.org/2002/07/owl#Class node3
+node3 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Class</B></td></tr><tr><td href='http://www.w3.org/2002/07/owl#Class' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2002/07/owl#Class</font></td></tr></table> > ] 
+# http://example.org/Oberon node4
+node4 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Oberon</B></td></tr><tr><td href='http://example.org/Oberon' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Oberon</font></td></tr><tr><td align='left'>ns1:says</td><td align='left'>&quot;Larry is a knave&quot;</td></tr></table> > ] 
+# http://example.org/Larry node5
+node5 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Larry</B></td></tr><tr><td href='http://example.org/Larry' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Larry</font></td></tr><tr><td align='left'>ns1:says</td><td align='left'>&quot;Justin is a knave&quot;</td></tr><tr><td align='left'>ns1:says</td><td align='left'>&quot;Quentin is a knight or I am a knave&quot;</td></tr></table> > ] 
+# http://example.org/Hillary node6
+node6 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Hillary</B></td></tr><tr><td href='http://example.org/Hillary' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Hillary</font></td></tr><tr><td align='left'>ns1:says</td><td align='left'>&quot;Xan is a knave&quot;</td></tr></table> > ] 
+# http://example.org/Justin node7
+node7 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Justin</B></td></tr><tr><td href='http://example.org/Justin' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Justin</font></td></tr><tr><td align='left'>ns1:says</td><td align='left'>&quot;Oberon always tells the truth&quot;</td></tr></table> > ] 
+# http://example.org/Quentin node8
+node8 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Quentin</B></td></tr><tr><td href='http://example.org/Quentin' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Quentin</font></td></tr><tr><td align='left'>ns1:says</td><td align='left'>&quot;Hillary is truthful&quot;</td></tr></table> > ] 
+# http://example.org/Knight node9
+node9 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Knight</B></td></tr><tr><td href='http://example.org/Knight' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://example.org/Knight</font></td></tr></table> > ] 
+}

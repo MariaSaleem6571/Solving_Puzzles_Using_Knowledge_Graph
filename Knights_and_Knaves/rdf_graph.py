@@ -1,4 +1,8 @@
+import networkx as nx
+import matplotlib.pyplot as plt
+
 from rdflib import Graph, Namespace, URIRef, Literal, RDF, OWL
+
 
 def create_rdf_graph():
     g = Graph()
@@ -37,3 +41,29 @@ def create_rdf_graph():
     g.add((larry, says, Literal("Quentin is a knight or I am a knave")))
 
     return g
+
+# Create RDF graph
+rdf_graph = create_rdf_graph()
+
+# Create a NetworkX graph
+G = nx.Graph()
+
+# Add nodes (individuals)
+for subj, _, _ in rdf_graph:
+    G.add_node(subj)
+
+# Add edges (relations)
+for subj, pred, obj in rdf_graph:
+    G.add_edge(subj, obj)
+
+# Define positions for nodes using a layout algorithm (e.g., spring_layout)
+pos = nx.spring_layout(G)
+
+# Draw the graph with labels and customize the style
+plt.figure(figsize=(10, 10))
+nx.draw(G, pos, with_labels=True, node_color='skyblue', node_size=1000, font_size=10, font_color='black', font_weight='bold', edge_color='gray', width=1)
+
+# Show the graph
+plt.axis('off')
+plt.title("Knowledge Graph Visualization")
+plt.show()
